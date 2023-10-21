@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Space Grotesk", sans-serif;
+}
+:root{
+  --body: #fff;
+  --primary-color: rgb(21, 150, 21);
+  --hex-color: #ececec;
+  --text: #000;
+}
+body.dark{
+  --body: #000;
+  --primary-color: rgb(21, 150, 21);
+  --hex-color: #202020;
+  --text: #fff;
+}
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image:  linear-gradient(rgb(85, 233, 71), rgb(0, 0, 0))
+}
+.container{
+  max-width: 500px;
+  border-radius: 10px;
+  background-color: var(--body);
+}
+.wrapper{
+  padding: 10px;
+}
+.icon-div ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.icon-div ul li{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: calc(100% - div_width);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: var(--hex-color);
+  transition: 0.2s ease;
+}
+.icon-div ul li:hover{
+  border: 2px solid var(--primary-color);
+}
+.border{
+  border: 2px solid var(--primary-color);
+}
+.icon-div ul li i{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 22px;
+  padding: 10px;
+  color: var(--text);
+}
+.icon-div ul li p{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+  padding: 5px;
+  color: var(--text);
+}
+.notification{
+  position: absolute;
+  top: -100%;
+  padding: 10px;
+  transition: 0.2s ease;
+}
+body.open-notif .notification{
+  top: 0;
+}
+.notify{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--body);
+}
+.notify p{
+  font-size: 16px;
+  padding-right: 10px;
+  color: var(--text);
+}
+
+
+
+
